@@ -1,0 +1,11 @@
+:root {
+  --base-background-color: #ddd;
+  --border-color: #d5d5d5;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  padding: 4px;
+  background-color: var(--base-background-color);
+}

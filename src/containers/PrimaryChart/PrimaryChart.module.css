@@ -1,0 +1,9 @@
+.PrimaryChart {
+    border-bottom: 1px solid var(--border-color);
+    height: 55%;
+    padding: 4px;
+}
+
+.tradingViewChart {
+    width: 90%;
+}

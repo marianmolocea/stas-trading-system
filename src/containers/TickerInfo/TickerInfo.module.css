@@ -1,0 +1,7 @@
+.TickerInfo {
+    border: 1px solid var(--border-color);
+    border-top: none;
+    border-left: none;
+    height: 33.33%;
+    padding: 4px;
+}

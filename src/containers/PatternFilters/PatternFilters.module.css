@@ -1,0 +1,7 @@
+.PatternFilters {
+    border: 1px solid var(--border-color);
+    border-top: none;
+    border-right: none;
+    height: 50%;
+    padding: 4px;
+}
