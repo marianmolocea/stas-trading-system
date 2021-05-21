@@ -14,7 +14,7 @@ const PrimaryChart = () => {
     timezone: "Europe/London",
     locale: "en",
     enable_publishing: false,
-    allow_symbol_change: true,
+    allow_symbol_change: false,
     withdateranges: true,
     hide_side_toolbar: false,
   }

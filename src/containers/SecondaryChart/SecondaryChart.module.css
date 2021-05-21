@@ -1,0 +1,7 @@
+.SecondaryChart {
+  border: 1px solid var(--border-color);
+  border-top: none;
+  border-left: none;
+  height: 100%;
+  padding: 4px;
+}

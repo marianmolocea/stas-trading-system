@@ -1,15 +1,28 @@
 import React from 'react';
-
-import styles from './TickerInfo.module.css';
+//@ts-ignore
+import TradingViewWidget from 'react-tradingview-widget';
+import styles from './SecondaryChart.module.css';
 import { Row } from 'antd';
-import TickerInput from '../../components/TickerInput/TickerInput';
 
-const TickerInfo = () => {
+const SecondaryChart = () => {
+  const symbol = 'aapl';
+
+  const chartConfig = {
+    autosize: true,
+    symbol: `NASDAQ:${symbol}`,
+    interval: 'D',
+    timezone: 'Europe/London',
+    locale: 'en',
+    hide_top_toolbar: true,
+    enable_publishing: false,
+    allow_symbol_change: false,
+    hide_side_toolbar: false,
+  };
   return (
-    <Row className={styles.TickerInfo}>
-      <TickerInput />
+    <Row className={styles.SecondaryChart}>
+      <TradingViewWidget {...chartConfig} />
     </Row>
   );
 };
 
-export default TickerInfo;
+export default SecondaryChart;

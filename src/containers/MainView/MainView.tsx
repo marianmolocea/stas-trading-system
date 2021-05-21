@@ -4,6 +4,7 @@ import News from '../News/News';
 import PatternFilters from '../PatternFilters/PatternFilters';
 import PositionDetails from '../PositionDetails/PositionDetails';
 import PrimaryChart from '../PrimaryChart/PrimaryChart';
+import SecondaryChart from '../SecondaryChart/SecondaryChart';
 import TickerInfo from '../TickerInfo/TickerInfo';
 import Watchlist from '../Watchlis/Watchlist';
 import styles from './MainView.module.css';
@@ -18,6 +19,12 @@ const MainView = () => {
       </Col>
       <Col span={12}>
         <PrimaryChart />
+        <Row className={styles.bottomRow}>
+          <Col span={12}>
+            <SecondaryChart />
+          </Col>
+          <Col span={12}></Col>
+        </Row>
       </Col>
       <Col span={6}>
         <PatternFilters />
