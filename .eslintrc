@@ -1,0 +1,77 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["prettier", "@typescript-eslint", "jest", "react-hooks"],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": ["error"],
+    "react/jsx-curly-newline": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".ts", ".tsx"] }],
+    "require-yield": 0,
+    "no-unused-vars": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "@typescript-eslint/no-unused-vars": "error",
+    "react/destructuring-assignment": 0,
+    "react/jsx-props-no-spreading": 0,
+    "import/prefer-default-export": 0,
+    "react/button-has-type": "off",
+    "no-nested-ternary": "off",
+    "react/no-array-index-key": 0,
+    "react/static-property-placement": [
+      "error",
+      "property assignment",
+      {
+        "defaultProps": "static public field"
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
+  },
+  "globals": {
+    "document": true,
+    "localStorage": true,
+    "alert": true,
+    "fetch": true,
+    "window": true,
+    "navigator": true,
+    "Cypress": true,
+    "cy": true,
+    "before": true
+  },
+  "env": {
+    "jest/globals": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "overrides": [
+    {
+      "files": ["*test.tsx"],
+      "rules": {
+        "jsx-a11y/click-events-have-key-events": "off",
+        "jsx-a11y/no-static-element-interactions": "off"
+      }
+    },
+    {
+      "files": ["*_stories.jsx"],
+      "rules": {
+        "no-alert": "off"
+      }
+    }
+  ]
+}

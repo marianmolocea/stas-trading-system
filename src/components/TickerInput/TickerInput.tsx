@@ -1,16 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { Input } from 'antd';
 
 const { Search } = Input;
 
 const TickerInput = () => {
-    const onSearch =() => {
-        console.log('Ticker Search')
-    }
-    
-    return (
-        <Search placeholder="Ticker" onSearch={onSearch} style={{ width: 200 }} />
-    )
-}
+  const dispatch = useDispatch();
+  const onSearch = () => {
+    console.log('Ticker Search');
+  };
 
-export default TickerInput
+  return <Search placeholder="Ticker" onSearch={onSearch} style={{ width: 200 }} />;
+};
+
+export default TickerInput;

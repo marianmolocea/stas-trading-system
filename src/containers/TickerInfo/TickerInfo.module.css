@@ -1,7 +1,26 @@
 .TickerInfo {
-    border: 1px solid var(--border-color);
-    border-top: none;
-    border-left: none;
-    height: 33.33%;
-    padding: 4px;
+  border: 1px solid var(--border-color);
+  border-top: none;
+  border-left: none;
+  height: 33.33%;
+  width: 100%;
+  padding: 4px;
+}
+
+.headerRow {
+  width: 100%;
+  justify-content: space-between;
+  height: 20%;
+}
+
+.fourItemsRow,
+.threeItemsRow {
+  height: 20%;
+  border-bottom: 1px solid var(--border-color);
+  padding: 3px;
+  text-align: center;
+}
+
+.threeItemsRow:last-child {
+  border-bottom: none;
 }

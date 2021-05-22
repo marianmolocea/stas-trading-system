@@ -1,0 +1,12 @@
+.colSeparator {
+    border-right: 1px solid var(--border-color);
+}
+
+.cell {
+    display: flex;
+    flex-direction: column;
+}
+
+.cell label {
+    font-weight: 700;
+}
