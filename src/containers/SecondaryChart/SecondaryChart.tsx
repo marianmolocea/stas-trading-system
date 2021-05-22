@@ -3,9 +3,11 @@ import React from 'react';
 import TradingViewWidget from 'react-tradingview-widget';
 import styles from './SecondaryChart.module.css';
 import { Row } from 'antd';
+import { useSelector } from 'react-redux';
+import { selectors as tickerSelector } from '../../redux/reducers/tickerReducer';
 
 const SecondaryChart = () => {
-  const symbol = 'aapl';
+  const symbol = useSelector(tickerSelector.getTickerSymbol);
 
   const chartConfig = {
     autosize: true,

@@ -2,6 +2,10 @@
     border-right: 1px solid var(--border-color);
 }
 
+.colSeparator:last-child {
+    border-right: none;
+}
+
 .cell {
     display: flex;
     flex-direction: column;
